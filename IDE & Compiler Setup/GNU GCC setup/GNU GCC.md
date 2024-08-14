@@ -1,12 +1,12 @@
 ## Ajánlott platformok
 
-Linux
+Linux, *MacOS*
 
 ## GCC
 
 A GCC a GNU Compiler Collection rövidítése. Szabadon elérhető C, C++, Pascal, Objective C, Java, Fortran és Ada fordító, elsősorban Linux és BSD – tehát POSIX – rendszerekre. Létezik Windowsra kiadott binary is, viszont a beállítása elég szenvedős.
 
-## Gyors setup Linuxon, package managerek segítségével:
+## Gyors setup Linuxon és MacOS-en, package managerek segítségével:
 
 APT: 
 ```
@@ -19,10 +19,15 @@ Pacman:
 sudo pacman -S base-devel
 ```
 
+MacOS brew:
+```
+brew install gcc
+```
+
 ## Hello World
 
 Készítsünk valahol a fájlrendszerben egy új könyvtárat. `mkdir helloworld` `cd helloworld`
-Majd létrehozunk egy `main.c` filet: `touch.c`
+Majd létrehozunk egy `main.c` filet: `touch main.c`
 Ezután ebbe a fileba illesszük be a következő kódot(pl. VIM, NeoVIM, VSCode segítségével):
 ```c
 #include <stdio.h>
