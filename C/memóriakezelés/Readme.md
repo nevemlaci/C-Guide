@@ -47,7 +47,7 @@ void pelda_outparam(foo* f){
 }
 ```
 
-A dinamikus memória akkor hasznos még, ha futásidőben derül ki, pl. egy tömb mérete:
+A dinamikus memória akkor hasznos még, ha futásidőben derül ki, pl. egy tömb mérete:<br>
 [runtime_meretu_tomb.c](example/runtime_meretu_tomb.c) :
 ```c
 #include <stdio.h>
