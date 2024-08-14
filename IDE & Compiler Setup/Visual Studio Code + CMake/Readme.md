@@ -19,7 +19,7 @@ A VS Code beépített task rendszere elég janky egy normális build system nél
 ## CMake setup
 
 Készítsünk egy `main.c` és egy CMakeLists.txt filet.
-A repo `examples` mappájábanvan egy példa CMakeLists.txt file, kommentekkel :)
+[Példa setup itt.](example/)
 
 Ha minden kész, akkor a bal oldali menüből a CMake menüt választva<br>
 ![alt text](image.png)<br>

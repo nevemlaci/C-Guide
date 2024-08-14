@@ -41,7 +41,8 @@ void int_swap(int* a, int* b) { //két db int* -ot veszünk paraméterként
 
 A fenti példából azt láthatjuk, hogy mindenképp szükdégünk van pointerekre, ha azt szeretnénk, hogy a függvényünk megváltoztassa a paraméterként kapott értékeket.
 
-pl:
+pl:<br>
+[swap.c](example/swap.c)
 ```c
 #include <stdio.h>
 
@@ -59,7 +60,8 @@ Kimenet:<br>
 ![alt text](image.png)
 
 A pointerek másik hasznos tulajdonsága, hogy viszonylag kicsik, 64 bites rendszereken általában 8 byteosak.
-Képzeljük el a következő szituációt:
+Képzeljük el a következő szituációt:<br>
+[jatekos.c](example/jatekos.c):
 ```c
 #include <stdio.h>
 

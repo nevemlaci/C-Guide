@@ -4,7 +4,8 @@ A Segmentation Fault, vagy másnéven segfault azonban ennél azért több. A gy
 
 A segfault egy gyakori oka a NULL pointerek dereferenciája.
 
-Például: 
+Például: <br>
+[null_rossz.c](example/null_rossz.c)
 
 ```cpp
 #include <stdio.h>
@@ -31,7 +32,9 @@ azt várja, hogy az `f` egy valid pointer. Ezért aztán, amikor NULL pointert k
 ![alt text](image.png)
 
 Az ilyen hibákat a hívott függyvények dokumentációjának elolvasásával, és a visszaadott értékek ellenőrzésével lehet kiküszöbölni. 
-A fenti példa kijavítva:
+A fenti példa kijavítva:<br>
+[null_jo.c](example/null_jo.c)
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
