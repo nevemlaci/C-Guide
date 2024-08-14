@@ -17,7 +17,7 @@ int main(void){
 }
 ```
 
-## Mire jó egy pointer?
+## Mire jó egy pointer? Cím szerinti paraméterátadás
 
 Tegyük fel, hogy egy egyszerű függvényt szeretnénk megvalósítani: `int_swap()`<br>
 Az egyetlen dolga, hogy megcserél két egész számot két változóban. 
@@ -55,3 +55,42 @@ int main(void){
 ```
 Kimenet:<br>
 ![alt text](image.png)
+
+A pointerek másik hasznos tulajdonsága, hogy viszonylag kicsik, 64 bites rendszereken általában 8 byteosak.
+Képzeljük el a következő szituációt:
+```c
+#include <stdio.h>
+
+typedef struct{
+    int x, y;
+    int w, h;
+    double rotation;
+    unsigned int hp;
+    unsigned int ammo;
+}Jatekos;
+
+int main(void){
+    printf("%zu", sizeof(Jatekos)); // 32
+    return 0;
+}
+```
+
+A `Jatekos` struktúra 32 byte méretű. Mint már fent említettük, amikor egy `Jatekos` -t egy függvénynek átadunk, az egész struktúra lemásolódik. Ez természetesen nagy struktúrák esetén nem előnyös.<br>
+Erre a problémára is megoldás a pointerek használata.
+A struktúra tagjainak eléréséhez először dereferenciát kéne rá alkalmazni, majd a `.` operátorral elérni a tagokat. Ez egy olyan gyakori eset, hogy külön operátor van rá, ez pedig a `->`(nyíl) operátor.
+Például:
+```c
+//mozgatja a jatekost x es y mennyiseggel az x es y iranyban
+void jatekos_mozgat(Jatekos* jatekos, int x, int y){
+    jatekos->x += x; // ugyanaz mint (*jatekos).x += x
+    jatekos->y += y; // ugyanaz mint (*jatekos).y += y
+}
+```
+Mivel egy pointer, függetlenül attól, hogy mire mutat, mindig ugyanakkora, és 99.9%-ban kisebb, mint pl. a `Jatekos` típus, így sokkal jobb így átadni a játékost, mint érték szerint.
+
+Természetesen egy pointer mutathat pointerre is. Tegyük fel, hogy van függvényünk, amivel egy pointert akarunk megváltoztatni(pl. láncolt lista fejét akarjuk átállítani)
+```c
+void reassign_pointer(int** destination, int* value){ //destination tipusa: int**, egy int pointerre mutato pointer
+    *destination = value;
+}
+```
