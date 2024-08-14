@@ -53,6 +53,8 @@ int main(void){
     printf("szam1:%d, szam2:%d\n", szam1, szam2); //szam1:10, szam2:5
 }
 ```
+Ezért szükságes a `scanf` függvénynek pointert átadni.
+
 Kimenet:<br>
 ![alt text](image.png)
 
@@ -94,3 +96,5 @@ void reassign_pointer(int** destination, int* value){ //destination tipusa: int*
     *destination = value;
 }
 ```
+
+Fontos azt megjegyezni, hogy a pointerek **nem tárolják magukban az általuk mutatott memóriát**. A pointer csak egy hivatkozási mód egy memóriaterületre. 
