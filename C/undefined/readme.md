@@ -1,3 +1,9 @@
+### Prerequisites
+
+∅
+
+# Undefined Behavior
+
 A C standard szerint minden C program viselkedése kikövetkeztethető kell legyen. Olyan viselkedés, amely ez ellen megy, több kategóriába sorolható, viszont a leggyakoribb és legfontosabb az "Undefined Behavior", vagy röviden UB.
 
 Egy UB-t tartalmazó program kimenetele nem biztos, és *pongyola módon fogalmazva* "teljesen random" lehet a viselkedése. A fordítóprogram alapértelmezett esetben nem figyelmeztet ilyen esetekre, viszont sokszor ilyen hibák miatt nem működik a kódunk.

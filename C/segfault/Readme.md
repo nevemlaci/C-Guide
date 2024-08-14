@@ -1,3 +1,9 @@
+### Prerequisites
+
+Pointerek
+
+# Segmentation Fault
+
 A C híres a különféle memóriahibáiról. Az egyik ilyen az ún. "Segmentation Fault". Aki programozott már mondjuk Javában, az NullReference Exceptionként már találkozhatott vele.
 
 A Segmentation Fault, vagy másnéven segfault azonban ennél azért több. A gyakorlatban egy segfault az operációs rendszerünk egy védelmi mechanizmusa. Ha egy program olyan memóriaterületet próbál elérni, ami nem számára van fenttartva, akkor az OS egy SIGSEGV(Signal Segmentation Violation) jelet küld a programnak majd leállítja. 
@@ -52,7 +58,7 @@ int main(void){
 }
 ```
 
-## Address Sanitizer
+## Address Sanitizer (asan)
 
 A Segmentation Fault egy másik gyakori oka a bad-access, avagy más processek, vagy garbage memory elérése. Ezeket a hibákat sokkal nehezebb megtalálni. Szerencsére erre a problémára találták ki az address sanitizereket. 
 
