@@ -19,7 +19,7 @@ int main(void){
 }
 ```
 
-Aki szemfüles és esetleg már dolgozott manuálisan memóriával, annak feltűnhet valami. Ez a valami pedig az, hogy a `malloc` hívással lefoglalt memória dinamikus élettartamú, a scope végén nem szabadul fel automatikusan, így felszabadítatlan memória van a programunkban. Ezt memóriaszivárgásnak hívják. Jelen esetben ez nem okoz borzasztó hibát, hiszen a program végén az OS visszaveszi a memóriát, azonban ha mondjuk egy textúrát a felülírása előtt nem szabadítunk fel, és annak pointere kimegy a scopeból, ott potenciálisan megabyteokat szivárogtatunk el akár minden képkocka után.
+Aki szemfüles és esetleg már dolgozott manuálisan memóriával, annak feltűnhet valami. Ez a valami pedig az, hogy a `malloc` hívással lefoglalt memória dinamikus élettartamú, a scope végén nem szabadul fel automatikusan, így felszabadítatlan memória van a programunkban. Ezt memóriaszivárgásnak hívják. Jelen esetben ez nem okoz borzasztó hibát, hiszen a program végén az OS visszaveszi a memóriát, azonban ha mondjuk egy textúrára mutató pointer felülírása előtt a memóriát nem szabadítunk fel, vagy a pointer kimegy a scopeból, ott potenciálisan megabyteokat szivárogtatunk el akár minden képkocka után.
 
 ```c
 #include <stdlib> //malloc itt lakik
