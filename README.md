@@ -6,4 +6,4 @@ Prog1 labor guideok:
 * Bónusz resourceok
 
 A példák egyszerűen leelenőrizhetők a https://godbolt.org oldalon.
-[Itt egy link](https://godbolt.org/z/fcnoc37Pr) egy viszonylag jól setupolt templatehez.
+[Itt egy link](https://godbolt.org/z/xncxcrjzc) egy viszonylag jól setupolt templatehez.
