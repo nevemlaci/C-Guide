@@ -99,6 +99,6 @@ A CMake a saját, "package" alapú rendszerét használja. Ez a gyakorlatban azt
 
 #### CMake SDL2 példa
 
-Az [example](/example/) mappában található egy példa cmake setup az SDL2 statikus linkelésére. Ehhez az SDL2 package managerből való telepítésére, vagy az SDL[github release](https://github.com/libsdl-org/SDL/releases/tag/release-2.30.6)-jeiből letöltött archiveot az `external`(relatív a CMakeLists.txt -hez) mappába való kicsomagolására van szükség.<br>
+Az [example](example/) mappában található egy példa cmake setup az SDL2 statikus linkelésére. Ehhez az SDL2 package managerből való telepítésére, vagy az SDL[github release](https://github.com/libsdl-org/SDL/releases/tag/release-2.30.6)-jeiből letöltött archiveot az `external`(relatív a CMakeLists.txt -hez) mappába való kicsomagolására van szükség.<br>
 
 ![alt text](image-1.png)
