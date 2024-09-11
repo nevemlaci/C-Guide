@@ -44,6 +44,12 @@ Ezután a C/C++->All Options->keresésben "Compile As"-> Compile as C Code<br>
 ![image](https://github.com/user-attachments/assets/fd83e381-6c52-4175-b514-c2de2da1bf95)<br>
 Ha ez kész, akkor leokézhatjuk az ablakot.
 
+## scanf, sscanf, stb
+
+A Visual Studio default compilere (MSVC) definiál a scanf és társai függvényeknek ún. "safe" verziókat, és az eredeti függvények használatát letiltja. Ezt a `_CRT_SECURE_NO_WARNINGS` makró definiálásával kapcsolhatjuk ki. Ehhez a Project properties>C/C++>Preprocessor>Preprocessor Definitions -nél a listába a `_CRT_SECURE_NO_WARNINGS` -ot illesszük be (a lista `;` -el választja el az elemeket)
+![image](https://github.com/user-attachments/assets/40cb0985-7e2f-4477-800d-76bf01010c88)
+
+
 ## Hello World!
 
 A `main.c` fileba az alábbi kódrészletet illesztve:
