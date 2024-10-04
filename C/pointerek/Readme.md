@@ -5,6 +5,7 @@
  Pointerek
 
 A C nyelv egy sajátossága, hogy a memóriát általános változókon kívül pointerekkel is elérhetjük.<br>
+
 Egy pointer gyakorlatilag felfogható egy memóriacímként, valamint más, változó metaadatokként.
 
 Egy változóra pointert az "address-of" operátorral: & (Ampersand, And jel, gyakorlatvezetőknél néha "At" jel) kaphatunk.
