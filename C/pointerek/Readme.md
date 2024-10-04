@@ -44,7 +44,7 @@ void int_swap(int* a, int* b) { //két db int* -ot veszünk paraméterként
 }
 ```
 
-A fenti példából azt láthatjuk, hogy mindenképp szükdégünk van pointerekre, ha azt szeretnénk, hogy a függvényünk megváltoztassa a paraméterként kapott értékeket.<br>
+A fenti példából azt láthatjuk, hogy mindenképp szükségünk van pointerekre, ha azt szeretnénk, hogy a függvényünk megváltoztassa a paraméterként kapott értékeket.<br>
 Például:<br>
 [swap.c](example/swap.c)
 ```c
