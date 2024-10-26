@@ -5,7 +5,7 @@ Pointerek
 # Dinamikus memóriakezelés
 
 C-ben lehetőségünk van manuálisan memóriát kérni az OS-től. Ezt a `malloc` függvénnyel tehetjük meg.
-`void *malloc(size_t size);` - a függvény egy `void*` típust ad vissza. Ezzel még nem feltétlen találkoztunk. A void pointer lényege, hogy minden más pointer típussá kovertálható. a `size` paraméter a kért memória mérete, byteban.
+`void *malloc(size_t size);` - a függvény egy `void*` típust ad vissza. Ezzel még nem feltétlen találkoztunk. A void pointer lényege, hogy minden más pointer típussá kovertálható. A `size` paraméter a kért memória mérete, byteban.
 
 Például:
 ```c
