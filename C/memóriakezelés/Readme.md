@@ -40,10 +40,18 @@ foo* pelda_malloc(){
     foo* to_return = (foo*)malloc(sizeof(foo));
     to_return->a = 5;
     to_return->b = 10;
-    return to_return;
+    return to_return; //pointer másolódik
 }
 
+//de ezt lehetne máshogy is:
+
+foo pelda_nomalloc(){
+    foo to_return;
+    to_return.a = 5;
+    to_return.b = 10;
+    return to_return; //struktúra másolódik
 ```
+ebben az esetben azt kell eldöntenünk, hogy megéri -e lemásolni a struktúrát.
 
 A dinamikus memória akkor hasznos még, ha futásidőben derül ki, pl. egy tömb mérete:<br>
 [runtime_meretu_tomb.c](example/runtime_meretu_tomb.c) :
