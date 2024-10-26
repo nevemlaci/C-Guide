@@ -43,14 +43,6 @@ foo* pelda_malloc(){
     return to_return;
 }
 
-//de ezt lehetne így is, ún output paraméter használatával:
-
-void pelda_outparam(foo* f){
-    foo to_return;
-    to_return.a = 5;
-    to_return.b = 10;
-    *f = to_return;
-}
 ```
 
 A dinamikus memória akkor hasznos még, ha futásidőben derül ki, pl. egy tömb mérete:<br>
